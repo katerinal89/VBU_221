@@ -1,4 +1,4 @@
-#pragma warning(disable:4326)
+Ôªø#pragma warning(disable:4326)
 #include<iostream>
 using namespace std;
 
@@ -39,18 +39,18 @@ void main()
 	int arr[n] = {1,2,3,4,5,6,7,8,9,10};
 	FillRand(arr, n);
 	Print(arr, n);
-	cout << "—ÛÏÏ‡ ˝ÎÂÏÂÌÚÚÓ‚ Ï‡ÒÒË‚‡: " << Sum(arr, n) << endl;
-	cout << "—Â‰ÌÂÂ-‡ËÙÏÂÚË˜ÂÒÍÓÂ ˝ÎÂÏÂÌÚÓ‚ Ï‡ÒÒË‚‡: " << Avg(arr, n) << endl;
-	cout << "ÃËÌËÏ‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ ‚ Ï‡ÒÒË‚Â: " << minValueIn(arr, n) << endl;
-	cout << "Ã‡ÍÒËÏ‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ ‚ Ï‡ÒÒË‚Â: " << maxValueIn(arr, n) << endl;
+	cout << "–°—É–º–º–∞ —ç–ª–µ–º–µ–Ω—Ç—Ç–æ–≤ –º–∞—Å—Å–∏–≤–∞: " << Sum(arr, n) << endl;
+	cout << "–°—Ä–µ–¥–Ω–µ–µ-–∞—Ä–∏—Ñ–º–µ—Ç–∏—á–µ—Å–∫–æ–µ —ç–ª–µ–º–µ–Ω—Ç–æ–≤ –º–∞—Å—Å–∏–≤–∞: " << Avg(arr, n) << endl;
+	cout << "–ú–∏–Ω–∏–º–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ –≤ –º–∞—Å—Å–∏–≤–µ: " << minValueIn(arr, n) << endl;
+	cout << "–ú–∞–∫—Å–∏–º–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ –≤ –º–∞—Å—Å–∏–≤–µ: " << maxValueIn(arr, n) << endl;
 	Sort(arr, n);
 	Print(arr, n);
 
-	/*int number_of_shifts; //ÍÓÎ ‚Ó Ò‰‚Ë„Ó‚
-	cout << "‚‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó Ò‰Ë„Ó‚: "; cin >> number_of_shifts;
+	/*int number_of_shifts; //–∫–æ–ª –≤–æ —Å–¥–≤–∏–≥–æ–≤
+	cout << "–≤–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ —Å–¥–∏–≥–æ–≤: "; cin >> number_of_shifts;
 	shiftLeft(arr, n, number_of_shifts);
 	Print(arr, n);
-	cout << "‚‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó Ò‰Ë„Ó‚: "; cin >> number_of_shifts;
+	cout << "–≤–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ —Å–¥–∏–≥–æ–≤: "; cin >> number_of_shifts;
 	shiftRight(arr, n, number_of_shifts);
 	Print(arr, n);*/
 
@@ -71,7 +71,7 @@ void main()
 
 #ifdef DEBUG
 	int a, b;
-	cout << "¬‚Â‰ËÚÂ ‰‚‡ ˜ËÒÎ‡: "; cin >> a >> b;
+	cout << "–í–≤–µ–¥–∏—Ç–µ –¥–≤–∞ —á–∏—Å–ª–∞: "; cin >> a >> b;
 	int c = Add(a, b);
 	cout << a << "+" << b << "=" << c << endl;
 	cout << a << "-" << b << "=" << Sub(a, b) << endl;
@@ -84,23 +84,23 @@ void main()
 #ifdef DEBUG
 int Add(int a, int b)
 {
-	//Addition ÒÎÓÊÂÌËÂ
+	//Addition —Å–ª–æ–∂–µ–Ω–∏–µ
 	int c = a + b;
 	return c;
 }
 int Sub(int a, int b)
 {
-	//Subtraction ‚˚˜ËÚ‡ÌËÂ
+	//Subtraction –≤—ã—á–∏—Ç–∞–Ω–∏–µ
 	return a - b;
 }
 int Mul(int a, int b)
 {
-	//Multiplication ÛÏÓÌÓÊÂÌËÂ
+	//Multiplication —É–º–æ–Ω–æ–∂–µ–Ω–∏–µ
 	return a * b;
 }
 double Div(int a, int b)
 {
-	//Division ‰ÂÎÂÌËÂ
+	//Division –¥–µ–ª–µ–Ω–∏–µ
 	return (double)a / b;
 }
 #endif // DEBUG
@@ -213,7 +213,7 @@ int maxValueIn(int arr[], const int n)
 }
 void shiftLeft(int arr[], const int n, int number_of_shifts)
 {
-	for (int i = 0; i < number_of_shifts; i++) //ÔÓ‚ÚÓˇÂÏ Ò‰‚„Ë Ï‡ÒÒË‚‡ Ì‡ 1 ˝ÎÂÏÂÌÚ
+	for (int i = 0; i < number_of_shifts; i++) //–ø–æ–≤—Ç–æ—Ä—è–µ–º —Å–¥–≤–≥–∏ –º–∞—Å—Å–∏–≤–∞ –Ω–∞ 1 —ç–ª–µ–º–µ–Ω—Ç
 	{
 		int buffer = arr[0];
 		for (int i = 0; i < n; i++)
@@ -235,8 +235,8 @@ void Sort(int arr[], const int n)
 	{
 		for (int j = i + 1; j < n; j++)
 		{
-			// arr[j] ÔÂÂ·Ë‡ÂÏ ˝ÎÂÏÂÌÚ
-			//arr[i] ‚˚·‡ÌÌ˚È ˝ÎÂÏÂÌÚ ‚ ÍÓÚÓÓÏ Ï˚ ıÓÚËÏ ÔÓÏÂÒÚËÚ¸ ÏËÌ ÁÌ‡˜ÂÌËÂ
+			// arr[j] –ø–µ—Ä–µ–±–∏—Ä–∞–µ–º —ç–ª–µ–º–µ–Ω—Ç
+			//arr[i] –≤—ã–±—Ä–∞–Ω–Ω—ã–π —ç–ª–µ–º–µ–Ω—Ç –≤ –∫–æ—Ç–æ—Ä–æ–º –º—ã —Ö–æ—Ç–∏–º –ø–æ–º–µ—Å—Ç–∏—Ç—å –º–∏–Ω –∑–Ω–∞—á–µ–Ω–∏–µ
 			if (arr[j] < arr[i])
 			{
 				int buffer = arr[i];
