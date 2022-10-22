@@ -45,6 +45,9 @@ void shiftRight(T arr[], const int n, int number_of_shifts);
 template<typename T>
 void Sort(T arr[], const int n);
 
+template<typename T>
+void Sort(T arr[ROWS][COLS], const int ROWS, const int COLS);
+
 void main()
 {
 	setlocale(LC_ALL, "");
@@ -242,6 +245,24 @@ void Sort(T arr[], const int n)
 				int buffer = arr[i];
 				arr[i] = arr[j];
 				arr[j] = buffer;
+			}
+		}
+	}
+}
+template<typename T>
+void Sort(T arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	{
+		for (int i = 0; i < ROWS * COLS; i++)
+		{
+			for (int j = i + 1; j < ROWS * COLS; j++)
+			{
+				if (arr[0][j] < arr[0][i])
+				{
+					int buffer = arr[0][i];
+					arr[0][i] = arr[0][j];
+					arr[0][j] = buffer;
+				}
 			}
 		}
 	}
