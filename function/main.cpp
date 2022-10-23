@@ -2,14 +2,23 @@
 
 #include "Constants.h"
 #include "Print.h"
+#include "Print.cpp"
 #include "Avg.h"
+#include "Avg.cpp"
 #include "maxValueIn.h"
+#include "maxValueIn.cpp"
 #include "minValueIn.h"
+#include "minValueIn.cpp"
 #include "shiftLeft.h"
+#include "shiftLeft.cpp"
 #include "shiftRight.h"
+#include "shiftRight.cpp"
 #include "Sort.h"
+#include "Sort.cpp"
 #include "Sum.h"
+#include "Sum.cpp"
 #include "stdafx.h"
+
 
 //#define DEBUG
 // 

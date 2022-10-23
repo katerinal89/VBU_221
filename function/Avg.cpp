@@ -1,4 +1,5 @@
 #include "Avg.h"
+#include "Sum.h"
 template<typename T>
 double Avg(T arr[], const int n)
 {
